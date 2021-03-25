@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+    <style>
+      html {
+        overflow-y: scroll;
+      }
+      body {
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Docsify v4 -->
+    <script>
+      window.$docsify = {
+        name: "FPMT Modelling Language",
+        repo: "",
+
+        loadSidebar: true,
+        subMaxLevel: 4,
+        sidebarDisplayLevel: 4,
+
+        search: {
+          maxAge: 86400000, // Expiration time, the default one day
+          paths: [], // or 'auto'
+          placeholder: "搜索",
+        },
+
+        markdown: {
+          renderer: {
+            code: function (code, lang) {
+              if (lang === "mermaid") {
+                return (
+                  '<div class="mermaid">' +
+                  mermaid.render("mermaid-svg-" + id++, code) +
+                  "</div>"
+                );
+              }
+              return this.origin.code.apply(this, arguments);
+            },
+            // image: function (href, title) {
+            //   return `<img src="${href}"/>`;
+            // },
+          },
+        },
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+    <!-- Sidebar -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+    <!-- Adding search box -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+    <!-- Adding c syntax highlighting -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.js"></script>
+
+    <!-- docsify-katex -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"
+    />
+  </body>
+</html>
