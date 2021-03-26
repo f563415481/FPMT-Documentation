@@ -6,36 +6,34 @@
 
 基于修正Kent-Park受压区骨架曲线、Yassin滞回规则，并考虑线性软化的受拉性能的一维混凝土本构
 
-**参考文献**
-- Mohd Hisham Mohd Yassin, "Nonlinear Analysis of Prestressed Concrete Structures under Monotonic and Cycling Loads", PhD dissertation, University of California, Berkeley, 1994.
+?> 参考文献 - Mohd Hisham Mohd Yassin, "Nonlinear Analysis of Prestressed Concrete Structures under Monotonic and Cycling Loads", PhD dissertation, University of California, Berkeley, 1994.
 
 ---
 
 ## 输入格式
 
-- 受压区参数 `COMP`
+### 受压区参数 `COMP`
 
-    > $N_{mat}$, matName, `COMP`, $f_{c0}$, $\epsilon_{c0}$, $f_{cu}$, $\epsilon_{cu}$, $\lambda$
+> $N_{mat}$, matName, `COMP`, $f_{c0}$, $\epsilon_{c0}$, $f_{cu}$, $\epsilon_{cu}$, $\lambda$
 
-    | 参数               | 说明                                     |
-    | ------------------ | ---------------------------------------- |
-    | `KEYWORD` = `COMP` | Compression 缩写                         |
-    | $f_{c0}$           | 混凝土受压强度（取负值）                 |
-    | $\epsilon_{c0}$    | 混凝土受压强度对应受压应变（取负值）     |
-    | $f_{cu}$           | 混凝土受压极限强度（取负值）             |
-    | $\epsilon_{cu}$    | 混凝土受压极限强度对应受压应变（取负值） |
-    | $\lambda$          |                                          |
+| 参数               | 说明                                     |
+| ------------------ | ---------------------------------------- |
+| `KEYWORD` = `COMP` | Compression 缩写                         |
+| $f_{c0}$           | 混凝土受压强度（取负值）                 |
+| $\epsilon_{c0}$    | 混凝土受压强度对应受压应变（取负值）     |
+| $f_{cu}$           | 混凝土受压极限强度（取负值）             |
+| $\epsilon_{cu}$    | 混凝土受压极限强度对应受压应变（取负值） |
+| $\lambda$          |                                          |
 
+### 受拉区参数 `TENS`
 
-- 受拉区参数 `TENS`
+> $N_{mat}$, matName, `TENS`, $f_{c0}$, $\epsilon_{c0}$, $f_{cu}$, $\epsilon_{cu}$, $\lambda$
 
-    > $N_{mat}$, matName, `TENS`, $f_{c0}$, $\epsilon_{c0}$, $f_{cu}$, $\epsilon_{cu}$, $\lambda$
-
-    | 参数               | 说明               |
-    | ------------------ | ------------------ |
-    | `KEYWORD` = `TENS` | Tension 缩写       |
-    | $f_{t}$            | 混凝土受拉强度     |
-    | $E_{ts}$           | 混凝土受压软化模量 |
+| 参数               | 说明               |
+| ------------------ | ------------------ |
+| `KEYWORD` = `TENS` | Tension 缩写       |
+| $f_{t}$            | 混凝土受拉强度     |
+| $E_{ts}$           | 混凝土受压软化模量 |
 
 
 ---

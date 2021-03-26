@@ -4,9 +4,9 @@
 
 ## 通用输入格式
 
-> /MPC/
-mpcName, `TYPE`, $N_{targetParticle}$, $N_{slavePSet}$
-\#\#
+> /MPC/<br>
+mpcName, `TYPE`, $N_{targetParticle}$, $N_{slavePSet}$<br>
+\#\#<br>
 
 | 参数                 | 说明                                                 |
 | -------------------- | ---------------------------------------------------- |
@@ -26,23 +26,23 @@ mpcName, `TYPE`, $N_{targetParticle}$, $N_{slavePSet}$
 
 ## 多质点约束种类 `TYPE` 
 
-- 质点间铰接耦合 `PIN`
+### 质点间铰接耦合 `PIN`
 
-    > $mpcName$, `PIN`, $N_{targetParticle}$, $N_{slavePSet}$
+> $mpcName$, `PIN`, $N_{targetParticle}$, $N_{slavePSet}$
 
-    将从属质点集中的质点与目标质点进行**平动自由度**耦合，使得参与耦合的质点的位移相同
+?> 将从属质点集中的质点与目标质点进行平动自由度耦合，使得参与耦合的质点的位移相同
 
-- 质点间刚性耦合 `BEAM`
+### 质点间刚性耦合 `BEAM`
 
-    > $mpcName$, `BEAM`, $N_{targetParticle}$, $N_{slavePSet}$
+> $mpcName$, `BEAM`, $N_{targetParticle}$, $N_{slavePSet}$
 
-    将从属质点集中的质点与目标质点进行**全部自由度**耦合，使得参与耦合的质点的位移与转角相同
+?> 将从属质点集中的质点与目标质点进行全部自由度耦合，使得参与耦合的质点的位移与转角相同
 
-- 质点与面刚性耦合 `PLANE`
+### 质点与面刚性耦合 `PLANE`
 
-    > $mpcName$, `PLANE`, $N_{targetParticle}$, $N_{slavePSet}$
+> $mpcName$, `PLANE`, $N_{targetParticle}$, $N_{slavePSet}$
 
-    将从属质点集所成**面**的等效转角与目标质点的**转角自由度**进行耦合，使得二者之间转动的保持刚性
+?> 将从属质点集所成面的等效转角与目标质点的转角自由度进行耦合，使得二者之间转动的保持刚性
 
 ---
 

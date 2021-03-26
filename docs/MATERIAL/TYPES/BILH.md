@@ -6,49 +6,48 @@
 
 ## 硬化方式
 
-- 无硬化 `NONH`
+### 无硬化 `NONH`
 
-    > $N_{mat}$, matName, `NONH`, $\sigma_{cr}$
+> $N_{mat}$, matName, `NONH`, $\sigma_{cr}$
 
-    | 参数               | 说明               |
-    | ------------------ | ------------------ |
-    | `KEYWORD` = `NONH` | Non-hardening 缩写 |
-    | $\sigma_{cr}$      | 屈服强度           |
-
-
-- 等向硬化 `ISOH`
-
-    > $N_{mat}$, matName, `ISOH`, $\sigma_{cr}$, $H_{iso}$
-
-    | 参数               | 说明                     |
-    | ------------------ | ------------------------ |
-    | `KEYWORD` = `ISOH` | Isotropic Hardening 缩写 |
-    | $\sigma_{cr}$      | 屈服强度                 |
-    | $H_{iso}$          | 等向硬化模量             |
+| 参数               | 说明               |
+| ------------------ | ------------------ |
+| `KEYWORD` = `NONH` | Non-hardening 缩写 |
+| $\sigma_{cr}$      | 屈服强度           |
 
 
-- 随动硬化 `KINH`
+### 等向硬化 `ISOH`
 
-    > $N_{mat}$, matName, `KINH`, $\sigma_{cr}$, $H_{kin}$
+> $N_{mat}$, matName, `ISOH`, $\sigma_{cr}$, $H_{iso}$
 
-    | 参数               | 说明                     |
-    | ------------------ | ------------------------ |
-    | `KEYWORD` = `KINH` | Kinematic Hardening 缩写 |
-    | $\sigma_{cr}$      | 屈服强度                 |
-    | $H_{kin}$          | 随动硬化模量             |
+| 参数               | 说明                     |
+| ------------------ | ------------------------ |
+| `KEYWORD` = `ISOH` | Isotropic Hardening 缩写 |
+| $\sigma_{cr}$      | 屈服强度                 |
+| $H_{iso}$          | 等向硬化模量             |
 
 
-- 混合硬化 `COMH`
+### 随动硬化 `KINH`
 
-    > $N_{mat}$, matName, `COMH`, $\sigma_{cr}$, $H_{iso}$, $H_{kin}$
+> $N_{mat}$, matName, `KINH`, $\sigma_{cr}$, $H_{kin}$
 
-    | 参数               | 说明                    |
-    | ------------------ | ----------------------- |
-    | `KEYWORD` = `COMH` | Combined Hardening 缩写 |
-    | $\sigma_{cr}$      | 屈服强度                |
-    | $H_{iso}$          | 等向硬化模量            |
-    | $H_{kin}$          | 随动硬化模量            |
+| 参数               | 说明                     |
+| ------------------ | ------------------------ |
+| `KEYWORD` = `KINH` | Kinematic Hardening 缩写 |
+| $\sigma_{cr}$      | 屈服强度                 |
+| $H_{kin}$          | 随动硬化模量             |
 
+
+### 混合硬化 `COMH`
+
+> $N_{mat}$, matName, `COMH`, $\sigma_{cr}$, $H_{iso}$, $H_{kin}$
+
+| 参数               | 说明                    |
+| ------------------ | ----------------------- |
+| `KEYWORD` = `COMH` | Combined Hardening 缩写 |
+| $\sigma_{cr}$      | 屈服强度                |
+| $H_{iso}$          | 等向硬化模量            |
+| $H_{kin}$          | 随动硬化模量            |
 
 ---
 
